@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+		<title>Intro component with sign up form</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="left">
+				<h1 class="banner__title">Learn to code by watching others</h1>
+				<p class="banner__desc">
+					See how experienced developers solve problems in real-time.
+					Watching scripted tutorials is great, but understanding how
+					developers think is invaluable.
+				</p>
+			</div>
+			<div class="right">
+
+				<div class="try">
+					<p class="try__desc">Try it free 7 days <span>then $20/mo. thereafter</span></p>
+        </div>
+
+        <form action="POST" id="form" class="form">
+          <div class="form-control">
+            <input type="text" id="first-name" class="form__input" placeholder="First Name"/>
+            <img id="error-fn" src="./images/icon-error.svg" alt="" class="error__icon">
+            <p class="error__mes">First Name cannot be empty</p>
+          </div>
+          <div class="form-control">
+            <input type="text" id="last-name" class="form__input" placeholder="Last Name"/>
+            <img src="./images/icon-error.svg" alt="" class="error__icon">
+            <p class="error__mes">Last Name cannot be empty</p>
+          </div>
+          <div class="form-control">
+            <input type="text" id="email" class="form__input" placeholder="Email Address"/>
+            <img src="./images/icon-error.svg" alt="" class="error__icon">
+            <p class="error__mes">Looks like this is not an email</p>
+          </div>
+          <div class="form-control">
+            <input type="password" id="password" class="form__input" placeholder="Password"/>
+            <img src="./images/icon-error.svg" alt="" class="error__icon">
+            <p class="error__mes">Password cannot be empty</p>
+          </div>
+          <button type="submit" id="submit" class="form__input btn-submit">Claim your free trial</button>
+          <p class="form-desc">
+            By clicking the button, you are
+            agreeing to our 
+            <a href="#">Terms and Services</a>
+          </p>
+        </form>
+			</div>
+    </div>
+    <script src="validate.js"></script>
+	</body>
+</html>
